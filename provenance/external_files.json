@@ -1,0 +1,242 @@
+{
+  "source_revision": "f3980e5b89cbefa81bee7cbbd03d43d5c1358495",
+  "upstream": "https://github.com/lghosth/FastGNAS",
+  "upstream_revision": "dc5cc1b41b64244941055a3dcd5d8dd2df1c6012",
+  "status": "Not bundled; exact adapted files must be obtained and verified separately",
+  "files": [
+    {
+      "path": "src/shardgnas/baselines/ap/reference.py",
+      "target": "src/sregnas/baselines/ap/reference.py",
+      "sha256": "d94f219aacbca4a1df6bb3cfb5ab152fe48caf6b39000c44a675a4755e1102f1",
+      "bytes": 33258
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/batching/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/batching/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/batching/cache_pool.py",
+      "target": "src/sregnas/baselines/fastgnas/batching/cache_pool.py",
+      "sha256": "ea4decbae71e097ab5fb845a0a1eb3d2b11a33348b32308c1e92d5959f6b4958",
+      "bytes": 7326
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/batching/hierarchical_cache_manager.py",
+      "target": "src/sregnas/baselines/fastgnas/batching/hierarchical_cache_manager.py",
+      "sha256": "4a3a79743db1644b3780990bfb7ef07758f7bc98127a20ab9d5c75b1475a06b7",
+      "bytes": 29143
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/balance_controller.py",
+      "target": "src/sregnas/baselines/fastgnas/core/balance_controller.py",
+      "sha256": "63fbbeb265c61fe603362cbd132a853f6b0c0cca2834ea71cee14e643ef599d2",
+      "bytes": 19446
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/balancing.py",
+      "target": "src/sregnas/baselines/fastgnas/core/balancing.py",
+      "sha256": "58cee679eeb30ad3c7444cfb1c82d96dee3cd61b7e043e5ee93d3548278c33f2",
+      "bytes": 4165
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/controller.py",
+      "target": "src/sregnas/baselines/fastgnas/core/controller.py",
+      "sha256": "063c6d51ca34232852db832578fac8c0505cbf1aaea67370f31ffca2fcb621e2",
+      "bytes": 20027
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/dispatcher_v2.py",
+      "target": "src/sregnas/baselines/fastgnas/core/dispatcher_v2.py",
+      "sha256": "11d15b10205a82013b89fcdfe8b49b2bb475863344aa005ec75f8883eab41797",
+      "bytes": 35430
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/load_estimator.py",
+      "target": "src/sregnas/baselines/fastgnas/core/load_estimator.py",
+      "sha256": "37ca4784baf1555c4c1e62a75877e69b4c82e039a2f2a2da041f2f7b6480523c",
+      "bytes": 33355
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/orchestration/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/core/orchestration/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/orchestration/training_orchestrator.py",
+      "target": "src/sregnas/baselines/fastgnas/core/orchestration/training_orchestrator.py",
+      "sha256": "11a6a32feed5684088020a2087faef7f4f7b6fe76b5721bae562d750fac12e82",
+      "bytes": 42381
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/registry/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/core/registry/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/registry/model_registry.py",
+      "target": "src/sregnas/baselines/fastgnas/core/registry/model_registry.py",
+      "sha256": "eec27ba6fd4c976e73518f6569431ad28887c9d6db346aa5d0ecbf9762d24464",
+      "bytes": 10138
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/scheduling/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/core/scheduling/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/scheduling/base.py",
+      "target": "src/sregnas/baselines/fastgnas/core/scheduling/base.py",
+      "sha256": "f08d49b2ed3efd3433c86ed8dd19734fca651a9b6f0a7c8d1f4e34a8d5824989",
+      "bytes": 5162
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/scheduling/bucket_scheduler.py",
+      "target": "src/sregnas/baselines/fastgnas/core/scheduling/bucket_scheduler.py",
+      "sha256": "57ec6486b642363f6d18e27a0d4f7ecaa89b4eadc88160ce8c2fe293d76e20b1",
+      "bytes": 12016
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/scheduling/rotation_scheduler.py",
+      "target": "src/sregnas/baselines/fastgnas/core/scheduling/rotation_scheduler.py",
+      "sha256": "04edd9659c3bcc138e3dc4d9ed31f99ad1b7750536397b773100506171866f4b",
+      "bytes": 13025
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/scheduling/subtask_scheduler.py",
+      "target": "src/sregnas/baselines/fastgnas/core/scheduling/subtask_scheduler.py",
+      "sha256": "55bb56c7b2a6aff1dd6e3a756e6a980ca3355fc72358a915d3e0b6a87dd767c3",
+      "bytes": 37465
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/state/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/core/state/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/core/state/state_manager.py",
+      "target": "src/sregnas/baselines/fastgnas/core/state/state_manager.py",
+      "sha256": "992a9c07326e0741d540a6f60c334f71d79afb354159858e76d9d9e9ee30f7b6",
+      "bytes": 6339
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/data/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/data/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/data/data_utils.py",
+      "target": "src/sregnas/baselines/fastgnas/data/data_utils.py",
+      "sha256": "bfec667c3b6e25332fe681b3256cf1d28a1ff9da79e98ba8d69e2b8ff6a0e12e",
+      "bytes": 1309
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/data/partition.py",
+      "target": "src/sregnas/baselines/fastgnas/data/partition.py",
+      "sha256": "99f650b0696d8fadb968ea84926bc6863b9ae9746fcb92e2f36bb3b72f8e152b",
+      "bytes": 62067
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/dataset/Mload_dataset/graph_statistics.yaml",
+      "target": "src/sregnas/baselines/fastgnas/dataset/Mload_dataset/graph_statistics.yaml",
+      "sha256": "95a033a62a2954b6cb0acca817a1d62c773bb98742ae6652df972663655e2f85",
+      "bytes": 1290
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/experiment/dataset.yaml",
+      "target": "src/sregnas/baselines/fastgnas/experiment/dataset.yaml",
+      "sha256": "b94d475d37c355f2a3ccea127610cb0049a53f2834c8606f99aff483c88021cf",
+      "bytes": 7319
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/mload_checkpoint.pth",
+      "target": "src/sregnas/baselines/fastgnas/mload_checkpoint.pth",
+      "sha256": "1b2fac5cb85b7641005cb2db80d57a74278e2fac402a036bc849f306d6f1fc7f",
+      "bytes": 255172
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/search.py",
+      "target": "src/sregnas/baselines/fastgnas/search.py",
+      "sha256": "1027850b7f2777312f34c71624daa21d8c39016ad97f5d0b3e094a090ac34cbe",
+      "bytes": 57226
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/timing_hook.py",
+      "target": "src/sregnas/baselines/fastgnas/timing_hook.py",
+      "sha256": "778c01493c7d7abb051928c01127aae87e4ae09ba03af9906b8849acf0e34f32",
+      "bytes": 621
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/trainer/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/trainer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/trainer/builder.py",
+      "target": "src/sregnas/baselines/fastgnas/trainer/builder.py",
+      "sha256": "ce3e4574a137c2c405a5c80f07ba72cf0fcef3962071bb008abd8b1ef518476c",
+      "bytes": 12849
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/trainer/worker.py",
+      "target": "src/sregnas/baselines/fastgnas/trainer/worker.py",
+      "sha256": "9a8fb37d87c155ba1111badfa3a29eb0643e2e39b3ebf71e0b7689631949cae9",
+      "bytes": 54268
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/utils/__init__.py",
+      "target": "src/sregnas/baselines/fastgnas/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/utils/export_timeline.py",
+      "target": "src/sregnas/baselines/fastgnas/utils/export_timeline.py",
+      "sha256": "10b7578a56f131e5bac1f474624feb3c066eed0ce74347fa81d73076a38df65c",
+      "bytes": 2989
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/utils/logger.py",
+      "target": "src/sregnas/baselines/fastgnas/utils/logger.py",
+      "sha256": "a38b0027b6fd6fc3dfd140a4d4318bf34568d4e923816c7efa792257302e106c",
+      "bytes": 10131
+    },
+    {
+      "path": "src/shardgnas/baselines/fastgnas/utils/utils.py",
+      "target": "src/sregnas/baselines/fastgnas/utils/utils.py",
+      "sha256": "498aa0228c6b61a901f61b08959aa469e6723166acd4811741fe7a10d90e08a2",
+      "bytes": 19011
+    },
+    {
+      "path": "src/shardgnas/baselines/graphnap/reference.py",
+      "target": "src/sregnas/baselines/graphnap/reference.py",
+      "sha256": "bfa24c8af5cc86af1a85005797c0381785a3f1b6c70f48644a6fbec476b92681",
+      "bytes": 50055
+    },
+    {
+      "path": "src/shardgnas/baselines/paspl/reference.py",
+      "target": "src/sregnas/baselines/paspl/reference.py",
+      "sha256": "7792508e2953b9122b4f0198396d636dadff55b02536fddcc7f8c6578f078213",
+      "bytes": 28883
+    }
+  ]
+}

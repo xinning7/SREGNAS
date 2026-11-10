@@ -1,0 +1,19 @@
+{
+  "experiment_id": "X25",
+  "method": "SREGNAS",
+  "dataset": "arXiv",
+  "kind": "replay",
+  "P": 8,
+  "count": 8,
+  "executor": "G3",
+  "domain": "local",
+  "cache_mode": "cached",
+  "record_type": "profile",
+  "cached_sampler": false,
+  "collect_search_garbage": false,
+  "cell_id": "x18v2_table4_sync_SREGNAS_V2_arXiv_P8",
+  "variant": "V2",
+  "version": "x25",
+  "cost_pass": "sync",
+  "category": "table4_sync"
+}

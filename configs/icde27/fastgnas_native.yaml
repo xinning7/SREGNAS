@@ -1,0 +1,76 @@
+fastgnas_backends:
+  num_workers: 8
+  device_GPU: 8
+  workers:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  dataset: Reddit
+  device: cuda
+  partition_strategy: balanced_stratified_khop
+  learning_rate: 0.01
+  weight_decay: 0.0005
+  dropout: 0.6
+  logging:
+    level: INFO
+    save_logs: true
+    log_dir: experiment/FastGNAS-rl/log
+  experiment:
+    name: FastGNAS-RL_experiment
+    use_random_seed: true
+    random_seed: 42
+nas:
+  search_strategy: layer_wise
+  num_search_rounds: 50
+  samples_per_round: 8
+  num_intermediate_nodes: 6
+  controller_lr: 0.00035
+  controller_baseline_decay: 0.999
+  controller_hidden_size: 100
+  tanh_constant: 2.5
+  temperature: 5.0
+  entropy_weight: 0.0001
+  weight_init_range: 0.1
+  enable_global_evaluation: true
+  balancing_strategy:
+    enable: true
+    rotation_mode: rotation
+    model_path: resolved_from_packaged_fastgnas_checkpoint
+    batch_size: 32
+    min_architectures: 8
+    min_samples: 3
+    max_samples: 10
+    tolerance: 0.1
+  token_subset: icde27_token_intersection_v1
+training:
+  num_rounds: 2
+  memory_cleanup_mode: aggressive
+  subtask_scheduler:
+    load_variance_threshold: 0.03
+    load_tolerance: 0.1
+    min_batch_per_round: 4
+    max_batch_per_round: 50
+  data_collection:
+    enable_mload_collector: false
+    dataset_dir: dataset/Mload_dataset
+    file_prefix: fastgnas
+    time_window_mode: batch
+    device_type: a6000
+    collector_type: dataset
+    priority_order:
+    - partition
+    - dataset
+    flush_every: 1
+  use_fixed_loader: false
+  early_stop_patience: null
+  root_seed: 42
+  logical_partitions: 8
+  icde27_gnn_hparams:
+    lr: 0.01
+    weight_decay: 0.0005
+    dropout: 0.6

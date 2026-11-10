@@ -1,0 +1,5 @@
+name: a6000
+available_gpus: 8
+name_contains: A6000
+memory_status: 48 GiB class
+calibrated: true

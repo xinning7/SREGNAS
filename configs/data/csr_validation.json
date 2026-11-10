@@ -1,0 +1,416 @@
+{
+  "flickr": {
+    "dataset": "Flickr",
+    "status": "OK",
+    "checks": {
+      "rowptr_bitwise": true,
+      "col_bitwise": true
+    },
+    "csr_sha256": "86b4e68b2c6a69eb7efb37e6d84e9a2c5a9ddf8c86be0e77d6ba5d986c7d920e",
+    "selected": "metis",
+    "SNR_LA_FI": {
+      "metis": {
+        "SNR": 0.7873433228259409,
+        "LA": 0.8427949199712876,
+        "FI": 0.6635689527510166,
+        "per_shard_TV": [
+          0.3088078793571248,
+          0.1753664086549484,
+          0.12316299661509747,
+          0.14177530691785875,
+          0.15984732450086264,
+          0.18999719213536576,
+          0.07920419757644685,
+          0.0794793344719937
+        ],
+        "per_shard_SNR": [
+          0.9438172043010754,
+          0.7026786816442414,
+          0.8189101071262227,
+          0.7546230112981324,
+          0.7680615919533093,
+          0.8051599346252627,
+          0.703890047858633,
+          0.7990257480862909
+        ],
+        "per_shard_labeled_count": [
+          8184,
+          8101,
+          8588,
+          8674,
+          8053,
+          8566,
+          8149,
+          8622
+        ],
+        "labeled_count": 66937,
+        "isolated_labeled": 0
+      },
+      "random": {
+        "SNR": 0.21187783537754407,
+        "LA": 0.9890153904846252,
+        "FI": 0.20955044009095888,
+        "per_shard_TV": [
+          0.01105547770254377,
+          0.011654712742568608,
+          0.01231529101680593,
+          0.004173807386004844,
+          0.01003244195052597,
+          0.011591754094895376,
+          0.01242023315684455,
+          0.014633158072809325
+        ],
+        "per_shard_SNR": [
+          0.2077246011754828,
+          0.20900536033353187,
+          0.20637494535193357,
+          0.2070221689634512,
+          0.2232989937709631,
+          0.19304991640792932,
+          0.2364777618364419,
+          0.21211398593060693
+        ],
+        "per_shard_labeled_count": [
+          8337,
+          8395,
+          8387,
+          8345,
+          8348,
+          8374,
+          8364,
+          8387
+        ],
+        "labeled_count": 66937,
+        "isolated_labeled": 0
+      }
+    },
+    "reference": "${SOURCE_ROOT}/results/icde27/EXP7/exp7_SREGNAS-replay-G3-local-cached-pool_Flickr_E1_P8S8_Q32K0_seed42_fixed_pool_20261025/prep/graph/manifest.json",
+    "prepared_graph": "${SOURCE_ROOT}/results/icde27/x18/v2/preparation/Flickr/graph/manifest.json",
+    "commit": "c70adf18a7fd46f65f3190b0e05ec64b4b529571",
+    "version": "x18_v2",
+    "at": "2026-11-03T07:18:00.906938+00:00",
+    "preparation_wall_s": 4.074026346206665,
+    "validation_wall_s": 3.16568660736084
+  },
+  "ogbn-arxiv": {
+    "dataset": "arXiv",
+    "status": "OK",
+    "checks": {
+      "rowptr_bitwise": true,
+      "col_bitwise": true
+    },
+    "csr_sha256": "4767ec6954d6446013a6ca6948f00913568b2078bece9fedce94a07b56e4ae4d",
+    "selected": "metis",
+    "SNR_LA_FI": {
+      "metis": {
+        "SNR": 0.9622008723979901,
+        "LA": 0.4514917079152512,
+        "FI": 0.43442571523651324,
+        "per_shard_TV": [
+          0.6875334847460416,
+          0.4928645921154376,
+          0.5532988525087498,
+          0.5010737815197995,
+          0.3584384084909774,
+          0.6788576510829119,
+          0.5847302331155164,
+          0.5312693330985562
+        ],
+        "per_shard_SNR": [
+          0.9747149287321831,
+          0.9101780133170266,
+          0.9688526233987615,
+          0.9377767680105751,
+          0.9614501504670339,
+          0.9856056886173096,
+          0.969779742340096,
+          0.9698910897013943
+        ],
+        "per_shard_labeled_count": [
+          13330,
+          12265,
+          13297,
+          12104,
+          17058,
+          18329,
+          17646,
+          16711
+        ],
+        "labeled_count": 120740,
+        "isolated_labeled": 0
+      },
+      "random": {
+        "SNR": 0.26833526586052675,
+        "LA": 0.9825285690591067,
+        "FI": 0.2636470647940383,
+        "per_shard_TV": [
+          0.016022471543734065,
+          0.01872699823760436,
+          0.016931629051704193,
+          0.01595416743918485,
+          0.018387343931036543,
+          0.01990256824851038,
+          0.016994988864610584,
+          0.016851280210761384
+        ],
+        "per_shard_SNR": [
+          0.2651040277407309,
+          0.2649799621262166,
+          0.2669288015106076,
+          0.28329242132731813,
+          0.2762664269223939,
+          0.2686985409354789,
+          0.2599057536413366,
+          0.26165616660104124
+        ],
+        "per_shard_labeled_count": [
+          14996,
+          15138,
+          15005,
+          15073,
+          15016,
+          15101,
+          15173,
+          15238
+        ],
+        "labeled_count": 120740,
+        "isolated_labeled": 0
+      }
+    },
+    "reference": "${SOURCE_ROOT}/results/icde27/EXP7/exp7_SREGNAS-replay-G3-local-cached-pool-attempt2_arXiv_E1_P8S8_Q32K0_seed42_fixed_pool_20261025/prep/graph/manifest.json",
+    "prepared_graph": "${SOURCE_ROOT}/results/icde27/x18/v2/preparation/arXiv/graph/manifest.json",
+    "commit": "c70adf18a7fd46f65f3190b0e05ec64b4b529571",
+    "version": "x18_v2",
+    "at": "2026-11-03T07:18:17.788120+00:00",
+    "preparation_wall_s": 12.32244324684143,
+    "validation_wall_s": 2.739922046661377
+  },
+  "reddit": {
+    "dataset": "Reddit",
+    "status": "OK",
+    "checks": {
+      "rowptr_bitwise": true,
+      "col_bitwise": true
+    },
+    "csr_sha256": "bd1173b095ecd2d4acb70bd844142b4a8055bd40e710b03f5c764149ad487ae7",
+    "selected": "random",
+    "SNR_LA_FI": {
+      "metis": {
+        "SNR": 0.9881897981518881,
+        "LA": 0.20090337205139308,
+        "FI": 0.19853066267549982,
+        "per_shard_TV": [
+          0.8292648033480216,
+          0.8541443819993542,
+          0.8116129386846285,
+          0.8288249117813647,
+          0.7779741643925587,
+          0.7853639120174576,
+          0.7718343468989407,
+          0.7337535644665294
+        ],
+        "per_shard_SNR": [
+          0.9964298848623723,
+          0.9950371238765143,
+          0.9890923354514788,
+          0.9888613359534616,
+          0.9786946067150529,
+          0.9871965392561982,
+          0.9985308159722223,
+          0.9712370043242249
+        ],
+        "per_shard_labeled_count": [
+          23566,
+          20472,
+          21245,
+          21373,
+          22596,
+          23232,
+          23040,
+          21738
+        ],
+        "labeled_count": 177262,
+        "isolated_labeled": 0
+      },
+      "random": {
+        "SNR": 0.8969046759410743,
+        "LA": 0.985659502368798,
+        "FI": 0.8840426165603272,
+        "per_shard_TV": [
+          0.017251208469381503,
+          0.01391215946052018,
+          0.012922433532353426,
+          0.012499814138953543,
+          0.015526616142890515,
+          0.014259427359948727,
+          0.014370457897598037,
+          0.013981864047970234
+        ],
+        "per_shard_SNR": [
+          0.8952069275753487,
+          0.8989894651173306,
+          0.8965425331098325,
+          0.8971170203241116,
+          0.8988231912994813,
+          0.8960847085700543,
+          0.8963124641877017,
+          0.8961780041773731
+        ],
+        "per_shard_labeled_count": [
+          22230,
+          22117,
+          22073,
+          22338,
+          22037,
+          22178,
+          22106,
+          22183
+        ],
+        "labeled_count": 177262,
+        "isolated_labeled": 0
+      }
+    },
+    "reference": "${SOURCE_ROOT}/results/icde27/EXP7/exp7_SREGNAS-replay-G3-local-cached-pool_Reddit_E1_P8S8_Q32K0_seed42_fixed_pool_20261025/prep/graph/manifest.json",
+    "prepared_graph": "${SOURCE_ROOT}/results/icde27/x18/v2/preparation/Reddit/graph/manifest.json",
+    "commit": "c70adf18a7fd46f65f3190b0e05ec64b4b529571",
+    "version": "x18_v2",
+    "at": "2026-11-03T07:19:26.295854+00:00",
+    "preparation_wall_s": 66.03539609909058,
+    "validation_wall_s": 0.48012638092041016
+  },
+  "ogbn-products": {
+    "dataset": "Products",
+    "status": "OK",
+    "checks": {
+      "rowptr_bitwise": true,
+      "col_bitwise": true
+    },
+    "csr_sha256": "2f898da623f90874992015cb8bf6e8ddf8cce501b0eff26ad530428f9f612618",
+    "selected": "random",
+    "SNR_LA_FI": {
+      "metis": {
+        "SNR": 0.9981880126699952,
+        "LA": 0.37722190893565455,
+        "FI": 0.37653838761606295,
+        "per_shard_TV": [
+          0.5430699422473303,
+          0.5435431493361608,
+          0.6982553438461595,
+          0.45816239154431987,
+          0.8418828851100465,
+          0.6634935919630681,
+          0.6733625316114291,
+          0.5604548928562494
+        ],
+        "per_shard_SNR": [
+          0.9975501543209876,
+          0.9959901113605951,
+          0.9984167991520932,
+          0.9986089054483265,
+          0.9995736778783281,
+          0.9981190844383028,
+          0.9991552407273246,
+          0.9979409410299743
+        ],
+        "per_shard_labeled_count": [
+          15552,
+          29394,
+          37740,
+          32744,
+          19117,
+          30393,
+          37269,
+          33729
+        ],
+        "labeled_count": 235938,
+        "isolated_labeled": 112
+      },
+      "random": {
+        "SNR": 0.9170537033740503,
+        "LA": 0.9914903817162134,
+        "FI": 0.9092499264126043,
+        "per_shard_TV": [
+          0.009724205648647524,
+          0.008474368970960945,
+          0.0066530021864255546,
+          0.00902347591152957,
+          0.007797385203963127,
+          0.008721019014511772,
+          0.00866506959833711,
+          0.009018419735917396
+        ],
+        "per_shard_SNR": [
+          0.9173194008350497,
+          0.917375657783059,
+          0.9177819251215925,
+          0.9167887064913834,
+          0.91392963868514,
+          0.9196033199900491,
+          0.9169173951345123,
+          0.9167100342434892
+        ],
+        "per_shard_labeled_count": [
+          29619,
+          29455,
+          29470,
+          29362,
+          29448,
+          29478,
+          29514,
+          29592
+        ],
+        "labeled_count": 235938,
+        "isolated_labeled": 112
+      }
+    },
+    "reference": "${SOURCE_ROOT}/results/icde27/EXP7/exp7_SREGNAS-replay-G3-local-cached-pool-attempt2_Products_E1_P8S8_Q32K0_seed42_fixed_pool_20261025/prep/graph/manifest.json",
+    "prepared_graph": "${SOURCE_ROOT}/results/icde27/x18/v2/preparation/Products/graph/manifest.json",
+    "commit": "c70adf18a7fd46f65f3190b0e05ec64b4b529571",
+    "version": "x18_v2",
+    "at": "2026-11-03T07:21:21.513476+00:00",
+    "preparation_wall_s": 104.69258952140808,
+    "validation_wall_s": 8.655083417892456
+  },
+  "reddit_degree_12": {
+    "csr_sha256": "6500492c0059a01f3fd8c2d981bf6f4cc386f8fb84230060cf42a2f86d11bb25",
+    "source": "${SOURCE_ROOT}/results/icde27/x10_queue/graphs/12/full/manifest.json",
+    "status": "OK",
+    "scope": "frozen X10 input graph exported as raw COO outside timing",
+    "version": "x18_v2"
+  },
+  "reddit_degree_25": {
+    "csr_sha256": "165e18501bd00e023b57118722e4ff3b52b265e950badc1f9949340a3b539906",
+    "source": "${SOURCE_ROOT}/results/icde27/x10_queue/graphs/25/full/manifest.json",
+    "status": "OK",
+    "scope": "frozen X10 input graph exported as raw COO outside timing",
+    "version": "x18_v2"
+  },
+  "reddit_degree_50": {
+    "csr_sha256": "1f2318063b46169f4832b9e7c380cd399196829fed9a371989eac016d8c05db3",
+    "source": "${SOURCE_ROOT}/results/icde27/x10_queue/graphs/50/full/manifest.json",
+    "status": "OK",
+    "scope": "frozen X10 input graph exported as raw COO outside timing",
+    "version": "x18_v2"
+  },
+  "reddit_degree_100": {
+    "csr_sha256": "fd688cf20845e6cb9e0f3e8c301a2de4eda57d7a77fcdbc00716e313b2704914",
+    "source": "${SOURCE_ROOT}/results/icde27/x10_queue/graphs/100/full/manifest.json",
+    "status": "OK",
+    "scope": "frozen X10 input graph exported as raw COO outside timing",
+    "version": "x18_v2"
+  },
+  "reddit_degree_200": {
+    "csr_sha256": "c434f9bf15874766f4630327e3151be4ce2ca47522b6c4556c0d6857d1795317",
+    "source": "${SOURCE_ROOT}/results/icde27/x10_queue/graphs/200/full/manifest.json",
+    "status": "OK",
+    "scope": "frozen X10 input graph exported as raw COO outside timing",
+    "version": "x18_v2"
+  },
+  "reddit_degree_original": {
+    "csr_sha256": "bd1173b095ecd2d4acb70bd844142b4a8055bd40e710b03f5c764149ad487ae7",
+    "source": "${SOURCE_ROOT}/results/icde27/x10_queue/graphs/original/full/manifest.json",
+    "status": "OK",
+    "scope": "frozen X10 input graph exported as raw COO outside timing",
+    "version": "x18_v2"
+  }
+}

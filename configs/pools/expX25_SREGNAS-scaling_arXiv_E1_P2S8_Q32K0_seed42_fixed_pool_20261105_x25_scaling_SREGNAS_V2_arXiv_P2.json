@@ -1,0 +1,19 @@
+{
+  "experiment_id": "X25",
+  "method": "SREGNAS",
+  "dataset": "arXiv",
+  "kind": "replay",
+  "P": 2,
+  "count": 32,
+  "executor": "G3",
+  "domain": "local",
+  "cache_mode": "cached",
+  "record_type": "fixed_pool",
+  "cached_sampler": false,
+  "collect_search_garbage": false,
+  "cell_id": "x18v2_scaling_SREGNAS_V2_arXiv_P2",
+  "variant": "V2",
+  "version": "x25",
+  "scaling_mode": "fixed_workload",
+  "category": "scaling"
+}

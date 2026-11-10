@@ -1,0 +1,12 @@
+{
+  "Cora_seed42_layer1.npy": "35d6dc6b0cddee753331695e599b8972aa46cfc7499ee7dbb8b712d4dcc77e66",
+  "Cora_seed42_layer2.npy": "160df2c727861fb4004fbafe79c88a1961359e7bd683ca944556ad91115a22e9",
+  "CiteSeer_seed42_layer1.npy": "6ea1e274e3db1a9d9213c8b8d4f57bf9df0a7cd2643c27d03f0acc1f5e464588",
+  "CiteSeer_seed42_layer2.npy": "9d0115708e7d562c215c38b827a033e4fba09dce290e3302bb7d27d039da1f2c",
+  "PubMed_seed42_layer1.npy": "ffa7ae99e45eed194ddeb1ea1916d1f473b8080762c4f682eb0916759882ae06",
+  "PubMed_seed42_layer2.npy": "d1b0bb59a7c3163a7c3e90c48a75489a28b2946bdec207b770987af70e32283b",
+  "Flickr_seed42_layer1.npy": "6c139c43cdde10d1f7694ccf684fb6ea75b36a251851ed0b0f29a69d62075982",
+  "Flickr_seed42_layer2.npy": "e63e4e62a517b25f9399a1b56b507bc41a5c20ecf690eba80d3e4c871e804cd1",
+  "ogbn-arxiv_seed42_layer1.npy": "a03588fecf5aeb94f5928910f380fa2ed931479b6f0b9b8ab916562599a0bc45",
+  "ogbn-arxiv_seed42_layer2.npy": "6c5b2d1dca17581a452f3ee94a7d0e8ed6e08c874d641b94de814f35f8f1c822"
+}

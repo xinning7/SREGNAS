@@ -1,0 +1,21 @@
+{
+  "experiment_id": "X27",
+  "method": "PAS-PL",
+  "dataset": "Reddit",
+  "kind": "replay",
+  "P": 8,
+  "count": 400,
+  "executor": "G3",
+  "domain": "local",
+  "cache_mode": "cached",
+  "record_type": "fixed_pool",
+  "cached_sampler": true,
+  "collect_search_garbage": true,
+  "cell_id": "expX27C_C2_PAS-PL_LPAS_Reddit_E1_P8S8_Q400K0_seed42_fixed_pool_20261106_resume2_a1",
+  "variant": null,
+  "version": "x27",
+  "capacity_probe": true,
+  "category": "X27C_C2",
+  "x27_replay_manifest": "pools/replays/Reddit_PAS-PL-c_seed42.json",
+  "x27_replay_sha256": "6c8b27ae1c61dc311067d4cd2ab50167f805da6662657816fb8309826dc3d2fd"
+}

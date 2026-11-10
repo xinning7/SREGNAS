@@ -1,0 +1,19 @@
+{
+  "experiment_id": "X25",
+  "method": "PAS-PL",
+  "dataset": "arXiv",
+  "kind": "replay",
+  "P": 8,
+  "count": 32,
+  "executor": "G3",
+  "domain": "local",
+  "cache_mode": "cached",
+  "record_type": "fixed_pool",
+  "cached_sampler": true,
+  "collect_search_garbage": false,
+  "cell_id": "x18v2_table5_PAS-PL_arXiv_P8",
+  "variant": null,
+  "version": "x25",
+  "capacity_probe": true,
+  "category": "table5"
+}

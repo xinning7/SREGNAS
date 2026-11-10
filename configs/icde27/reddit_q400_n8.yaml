@@ -1,0 +1,70 @@
+name: icde27_reddit_q400_n8
+graph:
+  dataset: reddit
+  partition_strategy: fi
+  hierarchical_r: 1
+  num_gpus: 8
+  permutation_seed: 42
+  fanout_a: 5
+  fanout_b: 5
+  f_int: 5
+  f_ext: 0
+  partition_seed: 42
+  partition_label_scope: train_val
+search:
+  generator: rl
+  pool_mode: independent
+  q: 400
+  m: 16
+  num_layers: 2
+  base_seed: 42
+  max_resamples_per_slot: 10
+  floor_reward: 0.0
+  entropy_weight: 0.0001
+  baseline_decay: 0.9
+  controller_lr: 0.0003
+  hidden_size: 128
+  temperature: 5.0
+  tanh_constant: 2.5
+  token_subset: icde27_token_intersection_v1
+train:
+  proxy_epochs: 100
+  retrain_epochs: 25
+  lr: 0.01
+  weight_decay: 0.0005
+  dropout: 0.0
+  retrain_seed: null
+  retrain_seed_policy: fingerprint_retrain_replica
+selection:
+  plan: plan1
+  k: 1
+runtime:
+  native_retrain_dropout: 0.6
+  system_gpus: &id001
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  baseline_gpus: *id001
+  parallel_sides: false
+  monitor_interval_s: 2.0
+  foreign_pid_policy: flag
+  execution_mode: persistent_worker
+  shared_search_scheduler: independent_bound_system_dynamic_baseline
+  scheduler_family: barrier_free_symmetric
+  topology_mode: native
+  require_native_topology: true
+  require_idle_preflight: true
+  sequential_side_order: system_then_baseline
+  execution_scope: system
+  side_timer: continuous
+  sampler_impl: gpu
+  feature_residency: gpu
+  inference_residency: gpu
+  require_fi_gpu: true
+full_budget: null
+fixed_x: 8

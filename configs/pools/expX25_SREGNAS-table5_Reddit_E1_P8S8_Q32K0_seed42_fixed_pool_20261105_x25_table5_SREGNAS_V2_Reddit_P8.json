@@ -1,0 +1,18 @@
+{
+  "experiment_id": "X25",
+  "method": "SREGNAS",
+  "dataset": "Reddit",
+  "kind": "replay",
+  "P": 8,
+  "count": 32,
+  "executor": "G3",
+  "domain": "local",
+  "cache_mode": "cached",
+  "record_type": "fixed_pool",
+  "cached_sampler": false,
+  "collect_search_garbage": false,
+  "cell_id": "x18v2_table5_SREGNAS_V2_Reddit_P8",
+  "variant": "V2",
+  "version": "x25",
+  "category": "table5"
+}

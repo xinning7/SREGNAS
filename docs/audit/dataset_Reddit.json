@@ -1,0 +1,74 @@
+{
+  "dataset": "Reddit",
+  "dataset_key": "reddit",
+  "loader": "src/sregnas/data/dataset_manager.py:139:load_dataset",
+  "csr_source": "src/sregnas/data/sampling.py:32:build_csr",
+  "num_nodes": 232965,
+  "num_features": 602,
+  "num_classes": 41,
+  "loaded_edge_records": 114615892,
+  "loaded_self_loops": 0,
+  "loaded_unique_nonloop_records": 114615892,
+  "loaded_nonloop_bidirectional": true,
+  "csr_directed_records": 114615892,
+  "csr_undirected_edges": 57307946,
+  "csr_self_loops": 0,
+  "split_source": "official dataset loader masks; no resplitting",
+  "split_counts": {
+    "train_mask": 153431,
+    "val_mask": 23831,
+    "test_mask": 55703
+  },
+  "unassigned_nodes": 0,
+  "graph_hash": "780ba55a6902e4b71227229c784406fd4e35b3a9774f7b076ce8d096fc3839da",
+  "graph_hash_inputs": {
+    "schema": "p0a-csr-feature-label-v1",
+    "num_nodes": 232965,
+    "preprocessing": "production symmetrize,deduplicate,remove input self-loops; no feature normalization",
+    "arrays": {
+      "x": "95c2a80b77d1130a81278133a89c19cb7e18222b61e6315a3b53b846a2589ec3",
+      "labels": "f5d93d35fc98ba4644d1cd19f7f168e9282a8cc7b19e6d82e84ac4ee6f686058",
+      "rowptr": "ae7da2a3346e7d6894d0f8c837ec25243b8147e8ac1a4cd7cf0454541c7b8385",
+      "col": "cb5790236e098602f6c041b93ce3fb7a04f3562d9dd8bfd675643005b85d6cf7"
+    }
+  },
+  "split_hash": "ae8e9538a89c88dec189eb51efeeba9d48b93b97d9f572072fa5f72327c105f4",
+  "split_hash_inputs": {
+    "schema": "p0a-official-mask-v1",
+    "num_nodes": 232965,
+    "masks": {
+      "train_mask": "a0f32854808ae5fe0e26ee462f90198c7aa1daecebdf671da80768139f09118f",
+      "val_mask": "0a4f24ef32b3ddafe0db74c76122e50d0515173fbcf538fe1304367bfac73bff",
+      "test_mask": "4ffe961a9539e2e46858cb38a130a25a730e44724606020394916459f1b7cc15"
+    }
+  },
+  "loaded_edge_array_hash": "e6068a3dc1d85445e5f4c0cf9b7749ae60afbba11f54920d873142ebccc59914",
+  "partitions": {
+    "metis": {
+      "status": "OK",
+      "construction_seconds": 7.833189324999694,
+      "membership_hash": "6b32263e36ea5586a5674a86c7a4e998dcf859e1ddff0b237a86146f7361f5d3",
+      "S": 8,
+      "gpu_allocation": 0,
+      "seed": null,
+      "seed_rule": "torch_sparse METIS binding exposes no seed",
+      "timing_valid": false,
+      "timing_use": "audit observation only; not formal E2E or speedup"
+    },
+    "random": {
+      "status": "OK",
+      "construction_seconds": 0.004920977997244336,
+      "membership_hash": "21519dd02e22668788c092cd56fb65c5af31ea5e6d6fccf280e7967fff228f87",
+      "S": 8,
+      "gpu_allocation": 0,
+      "seed": 42,
+      "seed_rule": "numpy.RandomState(42)",
+      "timing_valid": false,
+      "timing_use": "audit observation only; not formal E2E or speedup"
+    }
+  },
+  "selected_partition": null,
+  "native_graph_equality_verified": false,
+  "products_published_undirected_edges_reference": null,
+  "products_reference_source": null
+}

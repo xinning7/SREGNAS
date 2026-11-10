@@ -1,0 +1,18 @@
+{
+  "experiment_id": "X18",
+  "method": "AP",
+  "dataset": "arXiv",
+  "kind": "replay",
+  "P": 8,
+  "count": 8,
+  "executor": "G3",
+  "domain": "local",
+  "cache_mode": "cached",
+  "record_type": "profile",
+  "cached_sampler": true,
+  "collect_search_garbage": true,
+  "cell_id": "x18v2_table4_sync_AP_arXiv_P8",
+  "variant": null,
+  "version": "x18_v2",
+  "cost_pass": "sync"
+}

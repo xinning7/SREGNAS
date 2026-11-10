@@ -1,0 +1,74 @@
+{
+  "dataset": "Flickr",
+  "dataset_key": "flickr",
+  "loader": "src/sregnas/data/dataset_manager.py:139:load_dataset",
+  "csr_source": "src/sregnas/data/sampling.py:32:build_csr",
+  "num_nodes": 89250,
+  "num_features": 500,
+  "num_classes": 7,
+  "loaded_edge_records": 899756,
+  "loaded_self_loops": 0,
+  "loaded_unique_nonloop_records": 899756,
+  "loaded_nonloop_bidirectional": true,
+  "csr_directed_records": 899756,
+  "csr_undirected_edges": 449878,
+  "csr_self_loops": 0,
+  "split_source": "official dataset loader masks; no resplitting",
+  "split_counts": {
+    "train_mask": 44625,
+    "val_mask": 22312,
+    "test_mask": 22313
+  },
+  "unassigned_nodes": 0,
+  "graph_hash": "67b40f73357a1c2881268bc9d73aeda6974133c495eea64070720f987f99d445",
+  "graph_hash_inputs": {
+    "schema": "p0a-csr-feature-label-v1",
+    "num_nodes": 89250,
+    "preprocessing": "production symmetrize,deduplicate,remove input self-loops; no feature normalization",
+    "arrays": {
+      "x": "e6ae3feafeca0c2f51f97fa5a4657b4981de66ea499e0f50f58c6ecdc7d56846",
+      "labels": "7aac3445751df7514538863a508ac5ec91d3a90827bdfbe1bed0984350601502",
+      "rowptr": "738e746162a8c67be09bc62fe05868918766381e20da3d66cb5aaad712355234",
+      "col": "b9953be1e03c5d492f99b6cb1c38271b56e9f37cbbec114dc8c7015e201ee597"
+    }
+  },
+  "split_hash": "c3808a530b7ecfefca57c88c91cc90a29e0fcdec89ece9e746a27e658a567aea",
+  "split_hash_inputs": {
+    "schema": "p0a-official-mask-v1",
+    "num_nodes": 89250,
+    "masks": {
+      "train_mask": "f0f69c3cf8b88897d5b684972a9381fc567b691be37f68ec2d14dd3fc140cf87",
+      "val_mask": "276eb28112a23ed793a86d6a58a9444f0256306286e1f893f07de9a1d920b075",
+      "test_mask": "ed4cb88016aa7ac51efaa7856f7bb90953eb53329f3e95284fbae546837b1bc5"
+    }
+  },
+  "loaded_edge_array_hash": "60b0e996297b99bd844b82c1692544323ae3e466419523a5fed9f87af055619d",
+  "partitions": {
+    "metis": {
+      "status": "OK",
+      "construction_seconds": 0.49853591399732977,
+      "membership_hash": "544348eb5ec11de569135a661537ec3d32de54cec193233d2f64950a9cf48a70",
+      "S": 8,
+      "gpu_allocation": 0,
+      "seed": null,
+      "seed_rule": "torch_sparse METIS binding exposes no seed",
+      "timing_valid": false,
+      "timing_use": "audit observation only; not formal E2E or speedup"
+    },
+    "random": {
+      "status": "OK",
+      "construction_seconds": 0.001815015999454772,
+      "membership_hash": "a95b6dec9432245bea2f8591f43286c29f2276bf25d978e3786f10d1e607fa51",
+      "S": 8,
+      "gpu_allocation": 0,
+      "seed": 42,
+      "seed_rule": "numpy.RandomState(42)",
+      "timing_valid": false,
+      "timing_use": "audit observation only; not formal E2E or speedup"
+    }
+  },
+  "selected_partition": null,
+  "native_graph_equality_verified": false,
+  "products_published_undirected_edges_reference": null,
+  "products_reference_source": null
+}

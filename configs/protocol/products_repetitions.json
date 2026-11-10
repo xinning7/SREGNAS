@@ -1,0 +1,74 @@
+{
+  "schema": "products_user_directive_v1",
+  "recorded_at": "2026-10-25T10:58:46.337566+00:00",
+  "user_instruction": "Frozen Products compatibility contract v1",
+  "source": "Frozen numerical compatibility record",
+  "supersedes": [
+    "campaign_ready",
+    "follow-up",
+    "cost_projection_approval"
+  ],
+  "protocol_source": {
+    "path": "configs/protocol/products_definition.txt",
+    "sha256": "5f2d771671e728bb6409c4cb16d2ac51647c09659e25bf5fa03ee42ecfc70c76"
+  },
+  "methods": {
+    "SREGNAS": {
+      "protocol_status": "CONFIRMED",
+      "confirmation": "Registered protocol identity"
+    },
+    "BaselineFair": {
+      "protocol_status": "CONFIRMED",
+      "confirmation": "Registered protocol identity"
+    },
+    "BaselineFull": {
+      "protocol_status": "CONFIRMED",
+      "confirmation": "Registered protocol identity"
+    },
+    "FastGNAS": {
+      "protocol_status": "CONFIRMED",
+      "confirmation": "Registered protocol identity"
+    }
+  },
+  "hardware": "A6000_IDLE_ONLY",
+  "N": [
+    2,
+    4,
+    8
+  ],
+  "Q": 400,
+  "B": 8,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "smoke": {
+    "N": 2,
+    "Q": 16,
+    "M": 16,
+    "B": 8,
+    "k": 4,
+    "search_only": true,
+    "test_evaluations": 0,
+    "entries": 13
+  },
+  "n8_smoke": "不单独冒烟；第一次 N8 正式运行的第一个 cell 必须通过启动断言",
+  "timing_fallback": "从搜索开始到选出 winner，CPU 预处理单列",
+  "stop_on": [
+    "assertion_failure",
+    "non_OOM_crash",
+    "clearly_abnormal_result"
+  ],
+  "continue_on": [
+    "OOM_charged_to_Q",
+    "non_validity_affecting_warning"
+  ],
+  "products_eta": "每个方法第一次正式搜索结束后，以实测时长外推剩余墙钟并报告；不作为审批",
+  "main_plan": "experiments/manifest.json",
+  "historical_evidence": "Original numerical contract retained; main results and scopes are recorded in evidence and provenance.",
+  "x_amendment": {
+    "path": "docs/audit/protocol_amendment_x.md",
+    "sha256": "96e18b57f587fa0a0c892d06e0d6fdab219c194d0ed745d9c0f85684b51e372c"
+  }
+}

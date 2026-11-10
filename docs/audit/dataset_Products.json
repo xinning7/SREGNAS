@@ -1,0 +1,74 @@
+{
+  "dataset": "Products",
+  "dataset_key": "ogbn-products",
+  "loader": "src/sregnas/data/graph.py:45:_load_products_raw",
+  "csr_source": "src/sregnas/data/products.py:48:edge_index_to_undirected_csr",
+  "num_nodes": 2449029,
+  "num_features": 100,
+  "num_classes": 47,
+  "loaded_edge_records": 123718280,
+  "loaded_self_loops": 256,
+  "loaded_unique_nonloop_records": 123718024,
+  "loaded_nonloop_bidirectional": true,
+  "csr_directed_records": 123718024,
+  "csr_undirected_edges": 61859012,
+  "csr_self_loops": 0,
+  "split_source": "official dataset loader masks; no resplitting",
+  "split_counts": {
+    "train_mask": 196615,
+    "val_mask": 39323,
+    "test_mask": 2213091
+  },
+  "unassigned_nodes": 0,
+  "graph_hash": "2a7e55ea620eb33f8589e33e475c1a9921b7c84209bf9ea8b7cb85525fc881a2",
+  "graph_hash_inputs": {
+    "schema": "p0a-csr-feature-label-v1",
+    "num_nodes": 2449029,
+    "preprocessing": "production symmetrize,deduplicate,remove input self-loops; no feature normalization",
+    "arrays": {
+      "x": "817ea021a9dd96ec7952eb4734e7f0629089f417d7d1c008fa03e0271abd948d",
+      "labels": "fa38936d6a43580113ed57017c6dd0082065a131eb9814189740418c104ded3d",
+      "rowptr": "aad3ed3cad1db283e14d0bb19f08ed477e7a122beabd0be5c3f52011abc759cd",
+      "col": "60d76b0df2ff4b2a469b3cedb12206f6a2e8e00d275d1ac688624ea9e5c4bfe5"
+    }
+  },
+  "split_hash": "e4b27505c091bbdeffbf3955ac8dc5542162d5a7d6ac5aab97494344c66d30c2",
+  "split_hash_inputs": {
+    "schema": "p0a-official-mask-v1",
+    "num_nodes": 2449029,
+    "masks": {
+      "train_mask": "5046fdfb48e41c2796618cd773e176459a087c778e39f7fad9c5358bac3ca89a",
+      "val_mask": "19ab4761748ada127ca5bd4dd890644ed0e494a9220d2b3c3e0d6b4930a3c5a8",
+      "test_mask": "ee66bda872bc225a8ef20844db811af888aacfcee704484af32ad788b96908c2"
+    }
+  },
+  "loaded_edge_array_hash": "fd9a7c91f8fbfa5467691a4050f782effcff67098478278c80d95d6974f7b572",
+  "partitions": {
+    "metis": {
+      "status": "OK",
+      "construction_seconds": 19.23415041899716,
+      "membership_hash": "3f02e524e12708fc59a28e5dff98c45fa194f19aa7bfac3baab8616b663fbdfe",
+      "S": 8,
+      "gpu_allocation": 0,
+      "seed": null,
+      "seed_rule": "torch_sparse METIS binding exposes no seed",
+      "timing_valid": false,
+      "timing_use": "audit observation only; not formal E2E or speedup"
+    },
+    "random": {
+      "status": "OK",
+      "construction_seconds": 0.056091793998348294,
+      "membership_hash": "f3a5acf5c15ed260158c965b936917751d75b5aa9e7afdfd0011a33b8e95d1a4",
+      "S": 8,
+      "gpu_allocation": 0,
+      "seed": 42,
+      "seed_rule": "numpy.RandomState(42)",
+      "timing_valid": false,
+      "timing_use": "audit observation only; not formal E2E or speedup"
+    }
+  },
+  "selected_partition": null,
+  "native_graph_equality_verified": false,
+  "products_published_undirected_edges_reference": 61859140,
+  "products_reference_source": "${USER_HOME}/FastGNAS/experiment/dataset.yaml:101"
+}

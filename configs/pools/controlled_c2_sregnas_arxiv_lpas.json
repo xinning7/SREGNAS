@@ -1,0 +1,20 @@
+{
+  "experiment_id": "X27",
+  "method": "SREGNAS",
+  "dataset": "arXiv",
+  "kind": "replay",
+  "P": 8,
+  "count": 400,
+  "executor": "G3",
+  "domain": "local",
+  "cache_mode": "cached",
+  "record_type": "fixed_pool",
+  "cached_sampler": false,
+  "collect_search_garbage": false,
+  "cell_id": "expX27_C2_SREGNAS_from_PAS-PL-c_arXiv_Q400",
+  "variant": "V2",
+  "version": "x27",
+  "category": "C2",
+  "x27_replay_manifest": "pools/replays/arXiv_PAS-PL-c_seed42.json",
+  "x27_replay_sha256": "61aef3f5fa32cdc60203c71878ca6f6cc97627dd4d53eb74338afad017a9f01f"
+}

@@ -1,0 +1,11 @@
+Products compatibility contract
+
+This file accompanies the registered numerical checks in comparison/products_protocol.py. Active workloads are resolved in experiments/manifest.json, including their command-line overrides.
+
+The retained base contract has Q=400, final shortlist B=8 and logical N in {2,4,8} on idle A6000 devices. Its original search-seed domain is recorded in products.json; the repetition extension is recorded separately in products_repetitions.json. These compatibility domains do not select the final artifact workload matrix.
+
+Canonical final training uses the official split, Adam with learning rate 0.01 and weight decay 0.0005, dropout 0, 25 complete passes and the final checkpoint. Validation selects the winner before one test evaluation. Runtime numerical checks and the copied configs preserve every remaining sampler and executor parameter.
+
+FastGNAS retains the native candidate definition: batch size 256, evaluation batch size 256, five configured epochs with ten steps per epoch, one round, learning rate 0.01, dropout 0.6 and 47 classes. Rotation-specific remainder allocation and native model/seed semantics remain in the external implementation. The exact native settings are in configs/icde27/fastgnas_native.yaml and the separately obtained dependency bundle.
+
+Legacy BaselineFair and BaselineFull identities are retained only because the compatibility checker supports them. They are not added to the primary five-system workload matrix. The actual AP/PAS-PL/GraphNAP adapter settings come from their recorded jobs.

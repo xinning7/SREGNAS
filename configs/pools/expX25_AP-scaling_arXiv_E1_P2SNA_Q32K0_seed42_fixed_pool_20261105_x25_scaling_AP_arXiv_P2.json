@@ -1,0 +1,19 @@
+{
+  "experiment_id": "X25",
+  "method": "AP",
+  "dataset": "arXiv",
+  "kind": "replay",
+  "P": 2,
+  "count": 32,
+  "executor": "G3",
+  "domain": "local",
+  "cache_mode": "cached",
+  "record_type": "fixed_pool",
+  "cached_sampler": true,
+  "collect_search_garbage": true,
+  "cell_id": "x18v2_scaling_AP_arXiv_P2",
+  "variant": null,
+  "version": "x25",
+  "scaling_mode": "fixed_workload",
+  "category": "scaling"
+}
