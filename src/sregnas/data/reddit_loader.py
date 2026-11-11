@@ -12,14 +12,23 @@ def has_reddit_data(data_dir=None):
     )
 
 
+def ensure_reddit_data(data_dir=None):
+    root = Path(data_dir) if data_dir is not None else DATA_DIR
+    if not has_reddit_data(root):
+        from torch_geometric.datasets import Reddit
+
+        Reddit(root=str(root / "Reddit"))
+    if not has_reddit_data(root):
+        raise FileNotFoundError(
+            f"PyTorch Geometric did not provide reddit_data.npz and reddit_graph.npz in {root / 'Reddit' / 'raw'}"
+        )
+
+
 def load_reddit_dataset(data_dir=None):
     from torch_geometric.datasets import Reddit
 
     root = Path(data_dir) if data_dir is not None else DATA_DIR
-    if not has_reddit_data(root):
-        raise FileNotFoundError(
-            f"Upload reddit_data.npz and reddit_graph.npz to {root / 'Reddit' / 'raw'}"
-        )
+    ensure_reddit_data(root)
     dataset = Reddit(root=str(root / "Reddit"))
     data = dataset[0]
     return {

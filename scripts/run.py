@@ -43,7 +43,7 @@ def main():
     if output.exists():
         parser.error("output already exists; choose a fresh directory")
     if job["needs_external"] and external_missing():
-        parser.error("authorized external baseline bundle is absent; see docs/EXTERNAL_DEPENDENCIES.md")
+        parser.error("authorized external baseline bundle is absent; see the External baselines section in README.md")
     from sregnas.icde27.x22.canonical_input import KEYS, manifest_path
     if not manifest_path(KEYS[job["dataset"]]).is_file():
         parser.error("canonical input absent; run scripts/prepare_data.py first")

@@ -43,12 +43,14 @@ def raw_signature():
 def prepare_reddit_graph(root=None):
     from sregnas.data import load_dataset
     from sregnas.data.graph import scout
+    from sregnas.data.reddit_loader import ensure_reddit_data
 
     root = Path(root) if root is not None else cache_root()
     root.mkdir(parents=True, exist_ok=True)
     with (root / "prepare.lock").open("a") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         ready = root / "ready.json"
+        ensure_reddit_data(DATA_DIR)
         signature = raw_signature()
         if ready.exists():
             record = json.loads(ready.read_text())

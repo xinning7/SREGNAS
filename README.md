@@ -27,7 +27,7 @@ CUDA_VISIBLE_DEVICES="" SREGNAS_CPU_THREADS=1 python -m pytest -q
 
 ## Data preparation
 
-Flickr and Reddit are loaded through PyTorch Geometric; `ogbn-arxiv` and `ogbn-products` are loaded through OGB. The loaders use the official splits and recorded preprocessing. `configs/data/csr_validation.json` and `docs/audit/dataset_*.json` identify the expected inputs.
+Flickr and Reddit are loaded through PyTorch Geometric; `ogbn-arxiv` and `ogbn-products` are loaded through OGB. The loaders use the official splits and recorded preprocessing. If Reddit raw files are missing, the pinned PyTorch Geometric loader downloads its [Reddit archive](https://data.dgl.ai/dataset/reddit.zip) before graph preparation. `configs/data/csr_validation.json` and `docs/audit/dataset_*.json` identify the expected inputs.
 
 ```bash
 python scripts/prepare_data.py --data "$PWD/data" --dataset all
